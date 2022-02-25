@@ -21,4 +21,28 @@ public class PiezasServices implements IPiezasServices {
 		return piezasDAO.findAll();
 	}
 
+	@Override
+	public Piezas guardaPiezas(Piezas pieza) {
+		
+		return piezasDAO.save(pieza);
+	}
+
+	@Override
+	public Piezas actualizaPiezas(Piezas pieza) {
+		
+		return piezasDAO.save(pieza);
+	}
+
+	@Override
+	public Piezas actualizaConID(int id) {
+		
+		return piezasDAO.findById(id).get();
+	}
+
+	@Override
+	public void EliminaPieza(int id) {
+		piezasDAO.deleteById(id);
+		
+	}
+
 }

@@ -6,5 +6,5 @@ import com.example.demo.dto.Suministra;
 
 public interface ISuministraServices {
 
-	public List<Suministra> totalSumnisitra();
+	public List<Suministra> totalSuministra();
 }
