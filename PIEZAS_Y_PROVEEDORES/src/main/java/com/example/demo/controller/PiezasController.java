@@ -33,9 +33,9 @@ public class PiezasController {
 		return piezasSERVICES.totalPiezas();
 	}
 	
-	//GUARDA UNA INSTANCIA DE PIEZAS
-	@PostMapping("/piezas")
-	public Piezas guardaPiezas(Piezas pieza) {
+	//GUARDA UNA INSTANCIA DE PIEZAS 
+	@PostMapping("/pieza")
+	public Piezas guardaPiezas(@RequestBody Piezas pieza) { //ES IMPERATIVO HACER EL REQUESTBODY PUES CASO CONTRARIO DA ERROR
 		return piezasSERVICES.guardaPiezas(pieza);
 	}
 	
