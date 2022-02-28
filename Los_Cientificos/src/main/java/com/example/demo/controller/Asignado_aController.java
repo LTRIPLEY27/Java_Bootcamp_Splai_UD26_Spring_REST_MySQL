@@ -15,6 +15,11 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.example.demo.dto.Asignado_a;
 import com.example.demo.services.Asignado_aServices;
+/*
+ * @Author: Isabel Calzadilla
+ * UD26 : ER-SPRING-MYSQL-API
+ * Ejercicio2
+ * */
 
 @RestController
 @RequestMapping("/api")

@@ -14,6 +14,12 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.example.demo.dto.Cajero;
 import com.example.demo.services.CajeroServices;
+/*
+ * @Author: Isabel Calzadilla
+ * UD26 : ER-SPRING-MYSQL-API
+ * Ejercicio3
+ * */
+
 
 @RestController
 @RequestMapping("/api")

@@ -13,6 +13,12 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.example.demo.dto.Piezas;
 import com.example.demo.services.PiezasServices;
+/*
+ * @Author: Isabel Calzadilla
+ * UD26 : ER-SPRING-MYSQL-API
+ * Ejercicio1
+ * */
+
 
 //HACEMOS USO DEL DECORADOS RESCONTROLLER PARA IMPLEMENTAR EL MAPPEO
 @RestController
