@@ -34,21 +34,23 @@ public class PiezasController {
 	}
 	
 	//GUARDA UNA INSTANCIA DE PIEZAS 
-	@PostMapping("/pieza")
+	@PostMapping("/pieza/add")
 	public Piezas guardaPiezas(@RequestBody Piezas pieza) { //ES IMPERATIVO HACER EL REQUESTBODY PUES CASO CONTRARIO DA ERROR
 		return piezasSERVICES.guardaPiezas(pieza);
 	}
 	
+	//PREGUNTAR!!!!
+	
 	//retornamos una entidad según parámetro
 	@GetMapping("/piezas/{id}")
 	public Piezas PiezasbyID(@PathVariable(name = "id") int id) {
-		Piezas piezaID = new Piezas(); //DECLARAMOS UNA INSTANCIA DE LACLASE
+		Piezas piezaID = new Piezas(); //DECLARAMOS UNA INSTANCIA DE LA CLASE
 		piezaID = piezasSERVICES.actualizaConID(id); // ADHERIMOS EL VALOR DEL MÉTODO DE SERVICES A LA INSTANCIA CREADA
 		return piezaID;
 	}
 	
 	//MÉTODO QUE ACTUALIZA A TODA LA INSTANCIA UBICANDO POR ID
-	@PutMapping("/piezas/{id}")
+	@PutMapping("/piezas/{id}/actualiza")
 	public Piezas actualizaPiezas(@PathVariable(name = "id") int id, @RequestBody Piezas pieza) { // PARA ACTUALIZACION DEL TOTAL DE PARÁMETROS ES IMPERATIVO INDICAR EL ID A APUNTAR, ADEMÁS DE REALIZAR EL @REQUESTBODY CON EL OBJETO E INSTANCIA
 		Piezas piezaSel = new Piezas(); //PARA LA ACTUALIZACION SE HA DE INSTANCIAR 2 OBJETOS, UNO QUE RECIBIRÁ LOS DATOS DEL SELECCIONADO Y OTRO QUE SERÁ EL QUE APUNTE A LA ACTUALIZACIÓN
 		Piezas piezaActualizada = new Piezas();

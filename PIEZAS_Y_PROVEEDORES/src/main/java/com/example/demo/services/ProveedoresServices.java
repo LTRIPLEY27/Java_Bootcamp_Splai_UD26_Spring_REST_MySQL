@@ -38,7 +38,7 @@ public class ProveedoresServices implements IProveedoresServices{
 	}
 
 	@Override
-	public Proveedores actualizaConID(int id) {
+	public Proveedores ubicaConID(int id) {
 		
 		return proveedoresDAO.findById(id).get();
 	}

@@ -20,4 +20,24 @@ public class SuministraServices implements ISuministraServices{
 		return suministraDAO.findAll();
 	}
 
+	@Override
+	public Suministra ubicaPorId(int id) {
+		return suministraDAO.findById(id).get();
+	}
+
+	@Override
+	public Suministra agregaSuministra(Suministra sumi) {
+		return suministraDAO.save(sumi);
+	}
+
+	@Override
+	public Suministra actualizaSuministra(Suministra sumi) {
+		return suministraDAO.save(sumi);
+	}
+
+	@Override
+	public void eliminaSuministra(int id) {
+		suministraDAO.deleteById(id);
+	}
+
 }
