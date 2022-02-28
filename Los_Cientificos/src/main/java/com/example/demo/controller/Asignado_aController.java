@@ -51,7 +51,7 @@ public class Asignado_aController {
 	}
 	
 	@PostMapping("/asignados/add")
-	public Asignado_a agregaAsignado_a(@PathVariable (name = "id") String id, @RequestBody Asignado_a signed) {
+	public Asignado_a agregaAsignado_a(@RequestBody Asignado_a signed) {
 		return asignedSERV.agregaAsignado_a(signed);
 	}
 }
