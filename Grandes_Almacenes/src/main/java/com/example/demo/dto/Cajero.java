@@ -1,5 +1,8 @@
 package com.example.demo.dto;
 
+/**
+ * @author: Isabel calzadilla
+ * */
 import java.util.List;
 
 import javax.persistence.Column;
